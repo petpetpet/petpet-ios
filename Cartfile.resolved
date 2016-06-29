@@ -1,0 +1,5 @@
+github "Square/Cleanse" "0.1.0"
+github "Quick/Nimble" "v4.1.0"
+github "Quick/Quick" "v0.9.2"
+github "ReSwift/ReSwift" "1.0.0"
+github "ReactiveX/RxSwift" "2.5.0"
