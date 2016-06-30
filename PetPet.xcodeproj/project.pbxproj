@@ -39,6 +39,9 @@
 		10ABEAB51D25840B0062B733 /* PetsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ABEAB41D25840B0062B733 /* PetsHeaderView.xib */; };
 		10ABEAB71D2586460062B733 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAB61D2586460062B733 /* RxCocoa.framework */; };
 		10ABEAB81D2586460062B733 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAB61D2586460062B733 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10ABEABA1D25A25E0062B733 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEAB91D25A25E0062B733 /* Bindable.swift */; };
+		10ABEABC1D25A2B00062B733 /* Replaceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEABB1D25A2B00062B733 /* Replaceable.swift */; };
+		10ABEABE1D25A2CC0062B733 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEABD1D25A2CC0062B733 /* ViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		10ABEAB21D2583E80062B733 /* PetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetCell.xib; path = ../../../Base.lproj/PetCell.xib; sourceTree = "<group>"; };
 		10ABEAB41D25840B0062B733 /* PetsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetsHeaderView.xib; path = ../../../Base.lproj/PetsHeaderView.xib; sourceTree = "<group>"; };
 		10ABEAB61D2586460062B733 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		10ABEAB91D25A25E0062B733 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		10ABEABB1D25A2B00062B733 /* Replaceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Replaceable.swift; sourceTree = "<group>"; };
+		10ABEABD1D25A2CC0062B733 /* ViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,8 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				108FE1C91D243365004BEC85 /* Functions.swift */,
+				10ABEAB91D25A25E0062B733 /* Bindable.swift */,
 				108FE1CB1D243392004BEC85 /* Identifiable.swift */,
 				108FE1DB1D257A6A004BEC85 /* Extensions */,
+				10ABEABB1D25A2B00062B733 /* Replaceable.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 		108FE1C81D24334A004BEC85 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				10ABEABD1D25A2CC0062B733 /* ViewExt.swift */,
 				108FE1C61D243342004BEC85 /* ViewControllerExt.swift */,
 			);
 			name = Cocoa;
@@ -380,7 +389,10 @@
 				108FE1C41D243280004BEC85 /* PetsViewController.swift in Sources */,
 				108FE1C71D243342004BEC85 /* ViewControllerExt.swift in Sources */,
 				10ABEAB11D2583830062B733 /* ReusableView.swift in Sources */,
+				10ABEABC1D25A2B00062B733 /* Replaceable.swift in Sources */,
+				10ABEABA1D25A25E0062B733 /* Bindable.swift in Sources */,
 				108FE1CA1D243365004BEC85 /* Functions.swift in Sources */,
+				10ABEABE1D25A2CC0062B733 /* ViewExt.swift in Sources */,
 				10ABEAA81D2581C30062B733 /* RxExt.swift in Sources */,
 				108FE1D21D25725B004BEC85 /* State.swift in Sources */,
 				108FE1D41D257445004BEC85 /* PetsViewModel.swift in Sources */,
