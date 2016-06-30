@@ -25,6 +25,7 @@ extension AppDelegate {
     typealias Root = PropertyInjector<AppDelegate>
 
     func configure<B: Binder>(binder binder: B) {
+      binder.install(module: StoreModule())
       binder.install(module: PetsViewController.Module())
       binder.bindPropertyInjectionOf().to(injector: inject)
     }
