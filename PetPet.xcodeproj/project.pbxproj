@@ -35,8 +35,6 @@
 		10ABEAAD1D2582FB0062B733 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEAAC1D2582FB0062B733 /* Cell.swift */; };
 		10ABEAAF1D2583550062B733 /* PetsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEAAE1D2583550062B733 /* PetsHeaderView.swift */; };
 		10ABEAB11D2583830062B733 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEAB01D2583830062B733 /* ReusableView.swift */; };
-		10ABEAB31D2583E80062B733 /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ABEAB21D2583E80062B733 /* PetCell.xib */; };
-		10ABEAB51D25840B0062B733 /* PetsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ABEAB41D25840B0062B733 /* PetsHeaderView.xib */; };
 		10ABEAB71D2586460062B733 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAB61D2586460062B733 /* RxCocoa.framework */; };
 		10ABEAB81D2586460062B733 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAB61D2586460062B733 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10ABEABA1D25A25E0062B733 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ABEAB91D25A25E0062B733 /* Bindable.swift */; };
@@ -61,6 +59,8 @@
 		10ABEAE31D2C18CE0062B733 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAE01D2C18CE0062B733 /* AlamofireImage.framework */; };
 		10ABEAE41D2C18CE0062B733 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10ABEAE01D2C18CE0062B733 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10E56D071D2C1D9A00370CED /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E56D061D2C1D9A00370CED /* View.swift */; };
+		10E56D0F1D2C376F00370CED /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E56D0B1D2C376F00370CED /* PetCell.xib */; };
+		10E56D101D2C376F00370CED /* PetsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E56D0D1D2C376F00370CED /* PetsHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +94,7 @@
 
 /* Begin PBXFileReference section */
 		108FE18B1D2425EB004BEC85 /* PetPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		108FE18E1D2425EB004BEC85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PetPet/App/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		108FE18E1D2425EB004BEC85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PetPet/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		108FE1901D2425EB004BEC85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		108FE1951D2425EB004BEC85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		108FE1981D2425EB004BEC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,8 +122,6 @@
 		10ABEAAC1D2582FB0062B733 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		10ABEAAE1D2583550062B733 /* PetsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsHeaderView.swift; sourceTree = "<group>"; };
 		10ABEAB01D2583830062B733 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
-		10ABEAB21D2583E80062B733 /* PetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetCell.xib; path = ../../../Base.lproj/PetCell.xib; sourceTree = "<group>"; };
-		10ABEAB41D25840B0062B733 /* PetsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetsHeaderView.xib; path = ../../../Base.lproj/PetsHeaderView.xib; sourceTree = "<group>"; };
 		10ABEAB61D2586460062B733 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		10ABEAB91D25A25E0062B733 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		10ABEABB1D25A2B00062B733 /* Replaceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Replaceable.swift; sourceTree = "<group>"; };
@@ -145,6 +143,8 @@
 		10ABEADF1D2C18CE0062B733 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		10ABEAE01D2C18CE0062B733 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = ../Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		10E56D061D2C1D9A00370CED /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		10E56D0C1D2C376F00370CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = PetPet/Base.lproj/PetCell.xib; sourceTree = SOURCE_ROOT; };
+		10E56D0E1D2C376F00370CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = PetPet/Base.lproj/PetsHeaderView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,12 @@
 		108FE18D1D2425EB004BEC85 /* PetPet */ = {
 			isa = PBXGroup;
 			children = (
-				108FE1C01D2431F6004BEC85 /* App */,
+				108FE18E1D2425EB004BEC85 /* AppDelegate.swift */,
+				108FE1C11D243206004BEC85 /* Core */,
+				108FE1D01D2571BA004BEC85 /* State */,
+				108FE1C21D243262004BEC85 /* Pets */,
+				10E56D0A1D2C36BE00370CED /* Petting */,
+				108FE1C51D2432B4004BEC85 /* Support */,
 				108FE1951D2425EB004BEC85 /* Assets.xcassets */,
 				108FE1971D2425EB004BEC85 /* LaunchScreen.storyboard */,
 				108FE19A1D2425EB004BEC85 /* Info.plist */,
@@ -234,18 +239,6 @@
 			);
 			name = Frameworks;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		108FE1C01D2431F6004BEC85 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				108FE18E1D2425EB004BEC85 /* AppDelegate.swift */,
-				108FE1C11D243206004BEC85 /* Core */,
-				108FE1D01D2571BA004BEC85 /* State */,
-				108FE1C21D243262004BEC85 /* Pets */,
-				108FE1C51D2432B4004BEC85 /* Support */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		108FE1C11D243206004BEC85 /* Core */ = {
@@ -304,7 +297,7 @@
 				108FE1D71D257832004BEC85 /* StoreModule.swift */,
 				108FE1D91D2578E0004BEC85 /* Reducer.swift */,
 			);
-			name = State;
+			path = State;
 			sourceTree = "<group>";
 		};
 		108FE1DB1D257A6A004BEC85 /* Extensions */ = {
@@ -321,9 +314,9 @@
 		10ABEAA91D2582940062B733 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				10ABEAB21D2583E80062B733 /* PetCell.xib */,
+				10E56D0B1D2C376F00370CED /* PetCell.xib */,
 				10ABEAAA1D2582B90062B733 /* PetCell.swift */,
-				10ABEAB41D25840B0062B733 /* PetsHeaderView.xib */,
+				10E56D0D1D2C376F00370CED /* PetsHeaderView.xib */,
 				10ABEAAE1D2583550062B733 /* PetsHeaderView.swift */,
 			);
 			path = Subviews;
@@ -350,6 +343,13 @@
 				10ABEADA1D2C0F120062B733 /* PetPicView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		10E56D0A1D2C36BE00370CED /* Petting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Petting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,10 +434,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E56D0F1D2C376F00370CED /* PetCell.xib in Resources */,
 				108FE1991D2425EB004BEC85 /* LaunchScreen.storyboard in Resources */,
 				10ABEADE1D2C0F480062B733 /* PetPicView.xib in Resources */,
-				10ABEAB51D25840B0062B733 /* PetsHeaderView.xib in Resources */,
-				10ABEAB31D2583E80062B733 /* PetCell.xib in Resources */,
+				10E56D101D2C376F00370CED /* PetsHeaderView.xib in Resources */,
 				108FE1961D2425EB004BEC85 /* Assets.xcassets in Resources */,
 				108FE1CF1D243408004BEC85 /* Pets.storyboard in Resources */,
 			);
@@ -534,6 +534,22 @@
 				10ABEADD1D2C0F480062B733 /* Base */,
 			);
 			name = PetPicView.xib;
+			sourceTree = "<group>";
+		};
+		10E56D0B1D2C376F00370CED /* PetCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10E56D0C1D2C376F00370CED /* Base */,
+			);
+			name = PetCell.xib;
+			sourceTree = "<group>";
+		};
+		10E56D0D1D2C376F00370CED /* PetsHeaderView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10E56D0E1D2C376F00370CED /* Base */,
+			);
+			name = PetsHeaderView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
