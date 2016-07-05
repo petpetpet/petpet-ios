@@ -86,7 +86,25 @@ extension Sections: UICollectionViewDelegateFlowLayout {
     return result
   }
 
+  func collectionView(collectionView: UICollectionView, layout _layout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    if let result = proxy?.collectionView?(collectionView, layout: _layout, referenceSizeForHeaderInSection: section) {
+      return result
+    }
+
+    let supplement = adapter(of: UICollectionElementKindSectionHeader, in: section)
+    let result     = supplement.sizeable().estimatedSize(given: collectionView.bounds.size)
+
+    return result
+  }
+
   // MARK: Helpers
+  private func estimatedSize(in section: Int, given container: CGSize) -> CGSize {
+    let content = adapter(in: section)
+    let result  = content.sizeable().estimatedSize(given: container)
+
+    return result
+  }
+
   private var proxy: UICollectionViewDelegateFlowLayout? {
     return delegate as? UICollectionViewDelegateFlowLayout
   }
