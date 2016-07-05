@@ -8,26 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: UIApplicationDelegate
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    try! Component().build().injectProperties(into: self)
-    window?.makeKeyAndVisible()
-    return true
-  }
-
-  // MARK: Injection
-  private func inject(root: PetsViewController) {
+    let root = try! Graph.Component().build().container()
     window?.rootViewController = root
-  }
-}
+    window?.makeKeyAndVisible()
 
-// MARK: Component
-extension AppDelegate {
-  struct Component: Cleanse.Component {
-    typealias Root = PropertyInjector<AppDelegate>
-
-    func configure<B: Binder>(binder binder: B) {
-      binder.install(module: StoreModule())
-      binder.install(module: PetsViewController.Module())
-      binder.bindPropertyInjectionOf().to(injector: inject)
-    }
+    return true
   }
 }
