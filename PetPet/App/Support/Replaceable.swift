@@ -27,10 +27,8 @@ extension Replaceable where Self: Cell {
 
 // MARK: Helpers
 func replace(candidate: AnyObject) -> AnyObject? {
-  if let instance = candidate as? Replaceable {
-    if instance.isPlaceholder() {
+  if let instance = candidate as? Replaceable where instance.isPlaceholder() {
       return instance.replacement()
-    }
   }
 
   return nil

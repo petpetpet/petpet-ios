@@ -4,7 +4,7 @@ import Cleanse
 import RxSwift
 import RxCocoa
 
-class PetsViewController: ViewController {
+class PetsViewController: ViewController, Sectionable {
   private var model: PetsViewModel!
   private let subscriptions = DisposeBag()
 
@@ -22,13 +22,16 @@ class PetsViewController: ViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    collectionView.registerNib(UINib.init(nibName: "PetCell", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "PetCell")
+    sections().attach(to: collectionView)
+  }
 
-    subscriptions <- model
-      .pets()
-      .bindTo(collectionView.rx_itemsWithCellIdentifier("PetCell", cellType: PetCell.self)) { index, pet, cell in
-        print("cell")
-      }
+  // MARK: Sectionable
+  func sections(with builder: Sections.Builder) {
+    builder.section { $0
+      .header(PetsHeaderView.self) { $0
+        .data(self.model.pets()) }
+      .cell(PetCell.self) { $0
+        .data(self.model.pets()) } }
   }
 }
 
