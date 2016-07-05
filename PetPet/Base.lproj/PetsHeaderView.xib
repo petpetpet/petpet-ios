@@ -11,14 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PETS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-eC-5Pu">
-                    <rect key="frame" x="121" y="21" width="41" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PET PET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-eC-5Pu">
+                    <rect key="frame" x="99" y="6" width="122" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.99010065160000005" green="0.43466434669999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8cY-eC-5Pu" firstAttribute="centerY" secondItem="Z7N-Pe-bmN" secondAttribute="centerY" id="yTD-EE-UVr"/>
+                <constraint firstItem="8cY-eC-5Pu" firstAttribute="centerX" secondItem="Z7N-Pe-bmN" secondAttribute="centerX" id="z4v-P4-Hde"/>
+            </constraints>
             <point key="canvasLocation" x="791" y="372"/>
         </collectionReusableView>
     </objects>
