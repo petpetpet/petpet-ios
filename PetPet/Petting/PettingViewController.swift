@@ -25,6 +25,10 @@ class PettingViewController: ViewController {
     super.viewWillAppear(animated)
     navigationController?.navigationBarHidden = true
   }
+
+  @IBAction func didTapBackButton(sender: UIButton) {
+    navigationController?.popViewControllerAnimated(true)
+  }
 }
 
 // MARK: Module

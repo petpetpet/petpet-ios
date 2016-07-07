@@ -25,10 +25,21 @@
                                     <constraint firstAttribute="height" constant="180" id="b8f-oH-cXb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Al-WQ-W0X">
+                                <rect key="frame" x="490" y="550" width="90" height="30"/>
+                                <state key="normal" title="Back to Pets!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="xgH-yd-zjr" eventType="touchUpInside" id="emD-2h-yfN"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ke9-uS-TkE" firstAttribute="centerY" secondItem="DU9-C5-6lK" secondAttribute="centerY" id="Mf0-Ni-VnR"/>
+                            <constraint firstAttribute="trailing" secondItem="0Al-WQ-W0X" secondAttribute="trailing" constant="20" id="Tvf-Qd-8Ky"/>
+                            <constraint firstItem="2Oh-Ym-WKh" firstAttribute="top" secondItem="0Al-WQ-W0X" secondAttribute="bottom" constant="20" id="a2X-V4-BbC"/>
                             <constraint firstItem="Ke9-uS-TkE" firstAttribute="centerX" secondItem="DU9-C5-6lK" secondAttribute="centerX" id="bAd-Wg-vSK"/>
                         </constraints>
                     </view>
