@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		108B69081D2C4FC80044B66B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69071D2C4FC80044B66B /* Graph.swift */; };
+		108B690A1D2C525A0044B66B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69091D2C525A0044B66B /* Action.swift */; };
+		108B690C1D2C53210044B66B /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B690B1D2C53210044B66B /* ActionType.swift */; };
+		108B690E1D2C53650044B66B /* PetsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B690D1D2C53650044B66B /* PetsAction.swift */; };
+		108B69111D2C62D00044B66B /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69101D2C62D00044B66B /* Pet.swift */; };
+		108B69131D2C62EA0044B66B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69121D2C62EA0044B66B /* Image.swift */; };
+		108B69151D2EF37E0044B66B /* Defaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69141D2EF37E0044B66B /* Defaultable.swift */; };
+		108B69171D2EFB940044B66B /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B69161D2EFB940044B66B /* PetView.swift */; };
+		108B691C1D2EFBE70044B66B /* PetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108B691A1D2EFBE70044B66B /* PetView.xib */; };
 		108FE18F1D2425EB004BEC85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FE18E1D2425EB004BEC85 /* AppDelegate.swift */; };
 		108FE1911D2425EB004BEC85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FE1901D2425EB004BEC85 /* ViewController.swift */; };
 		108FE1961D2425EB004BEC85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108FE1951D2425EB004BEC85 /* Assets.xcassets */; };
@@ -102,6 +110,14 @@
 
 /* Begin PBXFileReference section */
 		108B69071D2C4FC80044B66B /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		108B69091D2C525A0044B66B /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		108B690B1D2C53210044B66B /* ActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
+		108B690D1D2C53650044B66B /* PetsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsAction.swift; sourceTree = "<group>"; };
+		108B69101D2C62D00044B66B /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		108B69121D2C62EA0044B66B /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		108B69141D2EF37E0044B66B /* Defaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaultable.swift; sourceTree = "<group>"; };
+		108B69161D2EFB940044B66B /* PetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
+		108B691B1D2EFBE70044B66B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = PetPet/Base.lproj/PetView.xib; sourceTree = SOURCE_ROOT; };
 		108FE18B1D2425EB004BEC85 /* PetPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		108FE18E1D2425EB004BEC85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PetPet/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		108FE1901D2425EB004BEC85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +205,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108B690F1D2C62B40044B66B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				108B69101D2C62D00044B66B /* Pet.swift */,
+				108B69121D2C62EA0044B66B /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		108FE1821D2425EB004BEC85 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +302,7 @@
 				108FE1C31D243280004BEC85 /* PetsViewController.swift */,
 				108FE1D31D257445004BEC85 /* PetsViewModel.swift */,
 				10E56D181D2C3A9B00370CED /* PetsRoute.swift */,
+				108B690D1D2C53650044B66B /* PetsAction.swift */,
 				10ABEAA91D2582940062B733 /* Subviews */,
 			);
 			path = Pets;
@@ -290,6 +316,7 @@
 				108FE1CB1D243392004BEC85 /* Identifiable.swift */,
 				10ABEABB1D25A2B00062B733 /* Replaceable.swift */,
 				10ABEAD71D2C083C0062B733 /* Sizeable.swift */,
+				108B69141D2EF37E0044B66B /* Defaultable.swift */,
 				10ABEACF1D25B8850062B733 /* Identifier.swift */,
 				10ABEACD1D25B7C70062B733 /* Change.swift */,
 				10ABEAD31D25BA070062B733 /* Schedulers.swift */,
@@ -315,6 +342,9 @@
 				108FE1D11D25725B004BEC85 /* State.swift */,
 				108FE1D71D257832004BEC85 /* StoreModule.swift */,
 				108FE1D91D2578E0004BEC85 /* Reducer.swift */,
+				108B69091D2C525A0044B66B /* Action.swift */,
+				108B690B1D2C53210044B66B /* ActionType.swift */,
+				108B690F1D2C62B40044B66B /* Models */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -359,6 +389,8 @@
 		10ABEAD91D2C0ED20062B733 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				108B691A1D2EFBE70044B66B /* PetView.xib */,
+				108B69161D2EFB940044B66B /* PetView.swift */,
 				10ABEADC1D2C0F480062B733 /* PetPicView.xib */,
 				10ABEADA1D2C0F120062B733 /* PetPicView.swift */,
 			);
@@ -458,6 +490,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108B691C1D2EFBE70044B66B /* PetView.xib in Resources */,
 				10E56D0F1D2C376F00370CED /* PetCell.xib in Resources */,
 				108FE1991D2425EB004BEC85 /* LaunchScreen.storyboard in Resources */,
 				10ABEADE1D2C0F480062B733 /* PetPicView.xib in Resources */,
@@ -487,20 +520,26 @@
 				10E56D1B1D2C3AA700370CED /* PettingRoute.swift in Sources */,
 				108FE1CC1D243392004BEC85 /* Identifiable.swift in Sources */,
 				10ABEAAB1D2582B90062B733 /* PetCell.swift in Sources */,
+				108B69151D2EF37E0044B66B /* Defaultable.swift in Sources */,
 				10ABEAC41D25B6C80062B733 /* Section.swift in Sources */,
+				108B69171D2EFB940044B66B /* PetView.swift in Sources */,
 				108FE1C41D243280004BEC85 /* PetsViewController.swift in Sources */,
 				108FE1C71D243342004BEC85 /* ViewControllerExt.swift in Sources */,
 				10ABEAC21D25B6BF0062B733 /* Sections.swift in Sources */,
 				108B69081D2C4FC80044B66B /* Graph.swift in Sources */,
+				108B690A1D2C525A0044B66B /* Action.swift in Sources */,
 				10ABEAB11D2583830062B733 /* ReusableView.swift in Sources */,
 				10ABEABC1D25A2B00062B733 /* Replaceable.swift in Sources */,
+				108B690C1D2C53210044B66B /* ActionType.swift in Sources */,
 				10ABEAD01D25B8850062B733 /* Identifier.swift in Sources */,
 				10ABEAD61D2C07D90062B733 /* Sectionable.swift in Sources */,
 				10E56D171D2C3A5000370CED /* RouteType.swift in Sources */,
 				10ABEABA1D25A25E0062B733 /* Bindable.swift in Sources */,
 				10E56D251D2C49B000370CED /* PettingViewModel.swift in Sources */,
+				108B69131D2C62EA0044B66B /* Image.swift in Sources */,
 				10ABEACA1D25B7540062B733 /* StreamAdapter.swift in Sources */,
 				10ABEAD81D2C083C0062B733 /* Sizeable.swift in Sources */,
+				108B69111D2C62D00044B66B /* Pet.swift in Sources */,
 				10ABEADB1D2C0F120062B733 /* PetPicView.swift in Sources */,
 				10ABEACC1D25B76A0062B733 /* Builder.swift in Sources */,
 				10ABEAD41D25BA070062B733 /* Schedulers.swift in Sources */,
@@ -517,6 +556,7 @@
 				108FE1D41D257445004BEC85 /* PetsViewModel.swift in Sources */,
 				10E56D191D2C3A9B00370CED /* PetsRoute.swift in Sources */,
 				10ABEAAD1D2582FB0062B733 /* Cell.swift in Sources */,
+				108B690E1D2C53650044B66B /* PetsAction.swift in Sources */,
 				108FE1D81D257832004BEC85 /* StoreModule.swift in Sources */,
 				108FE1DD1D257A99004BEC85 /* ReSwiftExt.swift in Sources */,
 				108FE1DA1D2578E0004BEC85 /* Reducer.swift in Sources */,
@@ -544,6 +584,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		108B691A1D2EFBE70044B66B /* PetView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108B691B1D2EFBE70044B66B /* Base */,
+			);
+			name = PetView.xib;
+			sourceTree = "<group>";
+		};
 		108FE1971D2425EB004BEC85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

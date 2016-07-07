@@ -14,6 +14,7 @@ struct PetsViewModel {
 
   // MARK: Actions
   func selectOption(at index: Int) -> RouteType {
+    store.dispatch(.pets(.select(pet: index)))
     return routes.get()
   }
 }

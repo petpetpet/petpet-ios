@@ -41,16 +41,14 @@ extension PetsViewController: UICollectionViewDelegate {
 }
 
 // MARK: Module
-extension PetsViewController {
+extension PetsViewController: Bindable {
+  func bind(model: PetsViewModel) {
+    self.model = model
+  }
+
   struct Module: Cleanse.Module {
     func configure<B: Binder>(binder binder: B) {
       binder.bind().to(factory: PetsViewController.create)
     }
-  }
-
-  static func create(model: PetsViewModel) -> Self {
-    let result = instance()
-    result.model = model
-    return result
   }
 }

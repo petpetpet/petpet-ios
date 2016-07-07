@@ -3,17 +3,11 @@ import ReSwift
 
 struct State: StateType {
   var pets: [Pet]
+  var selectedIndex: Int?
 }
 
 extension State {
-  struct Pet {
-    let owner: String
-    let name:  String
-    var image: Image
-  }
-
-  struct Image {
-    let url: String
-    var petpets: Int
+  var selectedPet: Pet? {
+    return selectedIndex.map { pets[$0] }
   }
 }

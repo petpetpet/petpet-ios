@@ -19,13 +19,13 @@ extension Bindable {
 }
 
 extension Bindable where Self: UIViewController {
-  static func instance(with model: Model) -> Self {
+  static func create(with model: Model) -> Self {
     return instance().bind(model)
   }
 }
 
 extension Bindable where Self: UIView {
-  static func instance(with model: Model) -> Self {
+  static func create(with model: Model) -> Self {
     return instance().bind(model)
   }
 }

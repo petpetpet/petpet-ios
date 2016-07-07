@@ -1,7 +1,16 @@
 
 import Cleanse
+import ReSwift
+import RxSwift
 
 struct PettingViewModel {
+  private let store: Store<State>
+
+  func pet() -> Observable<State.Pet> {
+    return store.changes()
+      .take(1)
+      .map { coalesce($0.selectedPet) }
+  }
 }
 
 extension PettingViewModel {

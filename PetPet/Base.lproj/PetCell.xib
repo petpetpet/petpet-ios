@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,53 +14,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5q-Sj-xMn" customClass="PetPicView" customModule="PetPet" customModuleProvider="target">
-                        <rect key="frame" x="95" y="25" width="130" height="130"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csW-Q5-6FW" customClass="PetView" customModule="PetPet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" secondItem="j5q-Sj-xMn" secondAttribute="width" multiplier="1:1" id="Lcd-fm-PqF"/>
-                        </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PET NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqx-9N-oaS">
-                        <rect key="frame" x="115" y="13" width="90" height="22"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrl-dN-HJW">
-                        <rect key="frame" x="113" y="145" width="95" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCV-X4-BNN">
-                        <rect key="frame" x="10" y="10" width="37" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="j5q-Sj-xMn" firstAttribute="top" secondItem="jfW-R1-Mmi" secondAttribute="top" constant="25" id="5xX-Ww-ePn"/>
-                <constraint firstItem="j5q-Sj-xMn" firstAttribute="top" secondItem="Tqx-9N-oaS" secondAttribute="bottom" constant="-10" id="M0e-wy-B48"/>
-                <constraint firstItem="nrl-dN-HJW" firstAttribute="centerX" secondItem="jfW-R1-Mmi" secondAttribute="centerX" id="PNS-2U-mrM"/>
-                <constraint firstItem="j5q-Sj-xMn" firstAttribute="centerY" secondItem="jfW-R1-Mmi" secondAttribute="centerY" id="Q69-Fm-t0f"/>
-                <constraint firstItem="xCV-X4-BNN" firstAttribute="leading" secondItem="jfW-R1-Mmi" secondAttribute="leading" constant="10" id="WNn-k5-5Yb"/>
-                <constraint firstItem="j5q-Sj-xMn" firstAttribute="centerX" secondItem="jfW-R1-Mmi" secondAttribute="centerX" id="Zoo-YU-kQG"/>
-                <constraint firstItem="xCV-X4-BNN" firstAttribute="top" secondItem="jfW-R1-Mmi" secondAttribute="top" constant="10" id="cBy-VC-bVU"/>
-                <constraint firstItem="Tqx-9N-oaS" firstAttribute="centerX" secondItem="jfW-R1-Mmi" secondAttribute="centerX" id="cs0-LE-cM7"/>
-                <constraint firstItem="nrl-dN-HJW" firstAttribute="top" secondItem="j5q-Sj-xMn" secondAttribute="bottom" constant="-10" id="sGb-76-DMQ"/>
-                <constraint firstAttribute="bottom" secondItem="j5q-Sj-xMn" secondAttribute="bottom" constant="25" id="viN-mf-QVc"/>
+                <constraint firstAttribute="trailing" secondItem="csW-Q5-6FW" secondAttribute="trailing" id="Ei4-Ae-r1x"/>
+                <constraint firstItem="csW-Q5-6FW" firstAttribute="top" secondItem="jfW-R1-Mmi" secondAttribute="top" id="Jtp-QL-9hr"/>
+                <constraint firstItem="csW-Q5-6FW" firstAttribute="leading" secondItem="jfW-R1-Mmi" secondAttribute="leading" id="Nb8-zl-JXe"/>
+                <constraint firstAttribute="bottom" secondItem="csW-Q5-6FW" secondAttribute="bottom" id="jsI-st-hfy"/>
             </constraints>
             <size key="customSize" width="275" height="140"/>
             <connections>
-                <outlet property="countLabel" destination="xCV-X4-BNN" id="Bvm-rX-CUU"/>
-                <outlet property="ownerLabel" destination="nrl-dN-HJW" id="QUs-gb-Dlm"/>
-                <outlet property="petLabel" destination="Tqx-9N-oaS" id="qn8-2i-cGY"/>
-                <outlet property="picView" destination="j5q-Sj-xMn" id="Uqo-K8-Y9V"/>
+                <outlet property="petView" destination="csW-Q5-6FW" id="2fG-tg-TPW"/>
             </connections>
             <point key="canvasLocation" x="809.5" y="644"/>
         </collectionViewCell>

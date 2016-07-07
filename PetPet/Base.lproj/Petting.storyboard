@@ -16,8 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="DU9-C5-6lK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke9-uS-TkE" customClass="PetView" customModule="PetPet" customModuleProvider="target">
+                                <rect key="frame" x="140" y="210" width="320" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="7di-pz-Pkz"/>
+                                    <constraint firstAttribute="height" constant="180" id="b8f-oH-cXb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ke9-uS-TkE" firstAttribute="centerY" secondItem="DU9-C5-6lK" secondAttribute="centerY" id="Mf0-Ni-VnR"/>
+                            <constraint firstItem="Ke9-uS-TkE" firstAttribute="centerX" secondItem="DU9-C5-6lK" secondAttribute="centerX" id="bAd-Wg-vSK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="petView" destination="Ke9-uS-TkE" id="YRO-RM-mPX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qx-qc-leG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PetView" customModule="PetPet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-wB-pas">
+                    <rect key="frame" x="15" y="15" width="37" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUu-qh-lWF" customClass="PetPicView" customModule="PetPet" customModuleProvider="target">
+                    <rect key="frame" x="95" y="25" width="130" height="130"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="gUu-qh-lWF" secondAttribute="width" multiplier="1:1" id="bjd-fl-xNX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PET NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97G-97-kKz">
+                    <rect key="frame" x="115" y="13" width="90" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-u1-eeZ">
+                    <rect key="frame" x="113" y="145" width="95" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="97G-97-kKz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3wN-2r-94Z"/>
+                <constraint firstItem="cQ7-u1-eeZ" firstAttribute="top" secondItem="gUu-qh-lWF" secondAttribute="bottom" constant="-10" id="AxX-ke-Xhm"/>
+                <constraint firstItem="cQ7-u1-eeZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MU3-kc-bu6"/>
+                <constraint firstAttribute="bottom" secondItem="gUu-qh-lWF" secondAttribute="bottom" constant="25" id="OVe-nU-u1m"/>
+                <constraint firstItem="gUu-qh-lWF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oiD-fp-ZGf"/>
+                <constraint firstItem="gUu-qh-lWF" firstAttribute="height" secondItem="gUu-qh-lWF" secondAttribute="width" multiplier="1:1" id="phI-h6-2gw"/>
+                <constraint firstItem="gUu-qh-lWF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="swr-SI-LwW"/>
+                <constraint firstItem="DD1-wB-pas" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="tLj-7s-o6y"/>
+                <constraint firstItem="gUu-qh-lWF" firstAttribute="top" secondItem="97G-97-kKz" secondAttribute="bottom" constant="-10" id="vNY-CQ-UYF"/>
+                <constraint firstItem="DD1-wB-pas" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="zSi-3e-3yk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabel" destination="DD1-wB-pas" id="4kM-7x-jCe"/>
+                <outlet property="ownerLabel" destination="cQ7-u1-eeZ" id="Reo-DX-PEf"/>
+                <outlet property="petLabel" destination="97G-97-kKz" id="833-nZ-C3I"/>
+                <outlet property="picView" destination="gUu-qh-lWF" id="Ro1-Ml-nGl"/>
+            </connections>
+            <point key="canvasLocation" x="654" y="333.5"/>
+        </view>
+    </objects>
+</document>
